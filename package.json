@@ -11,7 +11,7 @@
   },
   "scripts": {
     "dev": "vue serve ./src/vue-shortcut.vue",
-    "example": "vue serve ./examples/example.vue",
+    "example": "vue serve ./examples/example-1/app.vue",
     "build": "npm run build:unpkg & npm run build:es & npm run build:umd",
     "build:umd": "rollup --config build/rollup.config.js --format umd --file dist/vue-shortcut.umd.js",
     "build:es": "rollup --config build/rollup.config.js --format es --file dist/vue-shortcut.esm.js",
