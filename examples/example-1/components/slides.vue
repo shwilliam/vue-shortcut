@@ -1,5 +1,5 @@
 <template>
-  <div class="Slides">
+  <div class="slides">
     <div class="slide" :style="{ backgroundColor: getBgColor(currentSlideIndex) }">
       <p class="slide-number">Slide: {{ currentSlideIndex + 1 }}</p>
       <p class="instructions">Press the 'J' and 'K' keys to navigate the slides</p>
@@ -9,10 +9,6 @@
 
 <script>
 const bgColors = ["yellow", "blue", "red", "green", "pink", "purple"];
-const slides = Array(6)
-  .fill()
-  .map((x, i) => i);
-const maxIndex = slides.length - 1;
 
 export default {
   name: "Slides",

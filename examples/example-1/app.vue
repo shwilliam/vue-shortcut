@@ -1,19 +1,19 @@
 <template>
   <div id="app">
-    <ShortCut @nextItem="updateCurrentIndex(1)" @prevItem="updateCurrentIndex(-1)">
+    <VueShortcut @nextItem="updateCurrentIndex(1)" @prevItem="updateCurrentIndex(-1)">
       <Slides :currentSlideIndex="currentSlideIndex"/>
-    </ShortCut>
+    </VueShortcut>
   </div>
 </template>
 
 <script>
-import ShortCut from "../../src/vue-shortcut.vue";
+import VueShortcut from "../../src/vue-shortcut.vue";
 import Slides from "./components/slides.vue";
 
 export default {
   name: "App",
   components: {
-    ShortCut,
+    VueShortcut,
     Slides
   },
   data() {

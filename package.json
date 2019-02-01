@@ -1,7 +1,7 @@
 {
   "name": "vue-shortcut",
   "version": "0.1.0",
-  "description": "",
+  "description": "A declarative Vue wrapper for jkup's shortcut library",
   "license": "MIT",
   "main": "dist/vue-shortcut.umd.js",
   "module": "dist/vue-shortcut.esm.js",
