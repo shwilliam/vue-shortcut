@@ -1,6 +1,6 @@
 {
   "name": "vue-shortcut",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "A declarative Vue wrapper for jkup's shortcut library",
   "license": "MIT",
   "main": "dist/vue-shortcut.umd.js",
@@ -17,6 +17,24 @@
     "build:es": "rollup --config build/rollup.config.js --format es --file dist/vue-shortcut.esm.js",
     "build:unpkg": "rollup --config build/rollup.config.js --format iife --file dist/vue-shortcut.min.js"
   },
+  "keywords": [
+    "vue",
+    "component",
+    "shortcut",
+    "navigation",
+    "keyboard",
+    "accessibility",
+    "declarative",
+    "listener"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/shwilliam/vue-shortcut.git"
+  },
+  "bugs": {
+    "url": "https://github.com/shwilliam/vue-shortcut/issues"
+  },
+  "homepage": "https://github.com/shwilliam/vue-shortcut#readme",
   "dependencies": {},
   "devDependencies": {
     "minimist": "^1.2.0",
