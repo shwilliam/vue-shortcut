@@ -34,20 +34,19 @@ $ yarn add vue-shortcut
 
 Import, register and place the component in your Vue app. Attach a function to react to any of the events listed [above](##shortcuts) for example 'v-on:nextItem="doSomething"' or '@nextItem="doSomething"'.
 
-```
+```html
 <template>
-  [...]
-    <VueShortcut @nextItem="goForward" @prevItem="goBack" />
-  [...]
+  <VueShortcut @nextItem="goForward" @prevItem="goBack" />
 </template>
 
 <script>
-import VueShortcut from "vue-shortcut";
+import VueShortcut from 'vue-shortcut';
 
-[...]
+export default {
   components: {
-    VueShortcut,
-[...]
+    VueShortcut
+  }
+}
 </script>
 ```
 
@@ -65,3 +64,13 @@ or
 ```
 $ yarn add global vue/cli @vue/cli-service-global
 ```
+
+## Contributing
+
+This project is open to and encourages contributions! Feel free to discuss any bug fixes/features in the [issues](https://github.com/shwilliam/vue-shortcut/issues). If you wish to work on this project:
+
+1.  [Fork the project](https://github.com/shwilliam/vue-shortcut/archive/master.zip)
+2.  Create your feature branch (`git checkout -b new-feature-branch`)
+3.  Commit your changes (`git commit -am 'add new feature'`)
+4.  Push to the branch (`git push origin new-feature-branch`)
+5.  [Submit a pull request!](https://github.com/shwilliam/vue-shortcut/pull/new/master)
